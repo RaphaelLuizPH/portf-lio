@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html> 
 <head>
     sc
   <link rel="stylesheet" href="main.css">
@@ -13,6 +13,19 @@
     <script>
         function AbrirJanela() {
           window.open("https://www.behance.net/raphaelluizdesousa");
+        
+         
+        }
+
+        function AbrirGithub() {
+           window.open("https://github.com/RaphaelLuizPH"); 
+
+          }
+
+        function AbrirLinkedin() {
+
+          window.open("https://br.linkedin.com/in/raphaelluizss")
+
         }
         </script>
 
@@ -22,26 +35,45 @@
 <body>
 
   <h1 id="name" style="color:whitesmoke;" style="text-align:center;">Raphael Luiz</h1>
-    <p class="txt" style="color: rgb(0, 0, 0);">Engenharia de Software</p>
+    <p id="txt" style="color: rgb(0, 0, 0);">Engenharia de Software</p>
     
     <body style="background-color:rgb(0, 0, 0);">
         
         
-            <style>
-
-              </style>
+         
               
               <div class="container">
                 <div class="center">
                   <form>
-                    <input id="button"  type="button" value="Clique para abrir" onclick="AbrirJanela()"> 
+                    <input id="button"  type="button" value="Behance" onclick="AbrirJanela()"> 
                 </div>
               </div>
           </form>
 
+        
+      
+          
+          <div class="container">
+            <div class="center">
+              <form>
+                <input id="button2"  type="button" value="Github" onclick="AbrirGithub()"> 
+            </div>
+          </div>
+      </form>
 
 
+  <div class="container">
+    <div class="center">
+    <form> 
+      <input id="button3" type="button" value="Linkedin" onclick="AbrirLinkedin()"> 
+
+
+    
+    </div> 
+  </div>
+   
 </body>
+</form>
 
 
 </html>

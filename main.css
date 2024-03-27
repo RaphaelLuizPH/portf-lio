@@ -1,5 +1,5 @@
 .center {
-    background-color: #7e0000; /* Green */
+    background-color: #7e0000; 
     border: none;
     color: white;
     padding: 30px 64px;
@@ -12,10 +12,18 @@
 #name{ 
 font-style: italic;
 font-size: xx-large;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
 background-color: rgb(255, 0, 64);
 } 
  
+#txt{
 
+  font-style: italic;
+  font-size: xx-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  background-color: rgb(255, 0, 64);
+
+}
 
 
 .container {
@@ -38,11 +46,6 @@ background-color: rgb(255, 0, 64);
     color: blanchedalmond;
 }
 
-.txt{
-
-background-color: azure;
-color: #000;
-}
 
 #button{
     background-color: red;
@@ -70,3 +73,52 @@ color: #000;
     font-size: 32px;
 } 
 
+#button2{
+  background-color: red;
+  border: black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+
+  
+
+}
+
+#button2:hover{ 
+
+  background-color: rgb(255, 255, 255);
+  border: red;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+} 
+
+#button3 {
+
+  background-color: red;
+  border: black;
+  color: white;
+  padding: 15px 32px; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+}
+
+#button3:hover{
+
+  background-color: white;
+  border: red;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+}
