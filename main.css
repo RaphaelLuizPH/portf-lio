@@ -1,5 +1,7 @@
+
+
 .center {
-    background-color: #7e0000; 
+    background-color: #ffffff; 
     border: none;
     color: white;
     padding: 30px 64px;
@@ -11,25 +13,35 @@
 
 #name{ 
 font-style: italic;
-font-size: xx-large;
+font-size: 64px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-background-color: rgb(255, 0, 64);
+background-color: rgb(0, 0, 0);
+color: #ffffff;
+text-align: center;
 } 
  
 #txt{
 
   font-style: italic;
-  font-size: xx-large;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-  background-color: rgb(255, 0, 64);
-
+  font-size: 32px;
+  font-family: 'Times New Roman', Times, serif; 
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  text-align: center;
 }
 
 
 .container {
-    height: 250px;
+    height: 256px;
     position: relative;
-    border: 1px solid red;
+    color: #ffffff;
+  }
+
+  .container:hover {
+    height: 256px;
+    position: relative;
+    border: red; 
+    color: #ffffff;
   }
   
   .center {
@@ -43,14 +55,14 @@ background-color: rgb(255, 0, 64);
 
 .container {
 
-    color: blanchedalmond;
+    color: rgb(255, 255, 255);
 }
 
 
 #button{
-    background-color: red;
+    background-color: rgb(255, 255, 255);
     border: black;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -70,13 +82,16 @@ background-color: rgb(255, 0, 64);
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 32px;
+    font-size: 64px;
+    animation-name: animation;
+    animation-duration: 2s; 
+    cursor: pointer;
 } 
 
 #button2{
-  background-color: red;
+  background-color: rgb(255, 255, 255);
   border: black;
-  color: white;
+  color: rgb(206, 37, 169);
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -91,19 +106,22 @@ background-color: rgb(255, 0, 64);
 
   background-color: rgb(255, 255, 255);
   border: red;
-  color: rgb(0, 0, 0);
+  color: rgb(49, 53, 255);
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 32px;
+  font-size: 64px;
+  animation-name: animation;
+  animation-duration: 2s; 
+  cursor: pointer;
 } 
 
 #button3 {
 
-  background-color: red;
+  background-color: rgb(255, 255, 255);
   border: black;
-  color: white;
+  color: rgb(55, 40, 255);
   padding: 15px 32px; 
   text-align: center;
   text-decoration: none;
@@ -120,5 +138,44 @@ background-color: rgb(255, 0, 64);
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font-size: 64px;
+  animation-name: animation;
+  animation-duration: 2s; 
+  cursor: pointer;
+}
+
+
+#button4 {
+
+  background-color: rgb(255, 255, 255);
+  border: black;
+  color: rgb(55, 40, 255);
+  padding: 15px 32px; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   font-size: 32px;
 }
+
+#button4:hover{
+
+  background-color: white;
+  border: red;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 64px;
+  animation-name: animation;
+  animation-duration: 2s; 
+  cursor: pointer;
+}
+
+
+@keyframes animation {
+  from {font-size: 32px;}
+  to {font-size: 64px;}
+  
+} 
+
