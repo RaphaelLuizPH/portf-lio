@@ -199,3 +199,8 @@ body {
   background-size: cover;   
   }
 
+#imagem img{
+
+  height: auto;
+  width: auto;
+}
