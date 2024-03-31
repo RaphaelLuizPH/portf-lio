@@ -1,13 +1,9 @@
 
-
-#container0 {
-
-  border: 5px solid rgb(255, 0, 0);
-  width: 360px;
-  height: 720px;
-  margin: auto;
+* {
+  margin: 0;
+  padding: 0;  
+  box-sizing: border-box;
 }
-
 
 
 .center {
@@ -79,7 +75,9 @@ text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 32px;
-  
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
     
 
 }
@@ -108,6 +106,9 @@ text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 32px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
 
   
 
@@ -115,6 +116,7 @@ text-align: center;
 
 #button2:hover{ 
 
+  
   background-color: rgb(255, 255, 255);
   border: red;
   color: rgb(49, 53, 255);
@@ -138,6 +140,9 @@ text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 32px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 #button3:hover{
@@ -166,6 +171,9 @@ text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 32px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 #button4:hover{
@@ -199,8 +207,36 @@ body {
   background-size: cover;   
   }
 
-#imagem img{
+#logo img{
+  width: 112px;
+  display: block;
+  margin: auto;
 
-  height: auto;
-  width: auto;
+}
+
+#logo {
+  text-align: center;
+  padding: 24px;
+}
+
+#container {
+  width: 360px;
+  margin: auto; 
+  padding: 24px;
+}
+
+#logo a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  font-size: larger;
+  line-height: normal;
+  
+
+}
+
+ul {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
 }
