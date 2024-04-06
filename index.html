@@ -6,15 +6,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
   <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Linktree</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+  <title>Linktree</title>
+    
+    
+    
+  <script src='main.js'></script>
     <script>
         /* Essass funções são responsáveis por abrir uma nova página */
         function AbrirJanela() {
@@ -34,6 +43,11 @@
         function AbrirYoutube() {
 
         window.open("https://www.youtube.com/@PHLuiz")
+        }
+
+        function AbrirInstagram() {
+
+        window.open("https://www.instagram.com/phluiz.psd/")
 
 }
         </script>
@@ -43,18 +57,16 @@
 
   <div id="container">
     <div id="logo">
-    <img src="./Ativo 7@300x-8.png" alt="Logo PH"> 
+    <img id="PH" src="./Ativo 7@300x-8.png" alt="Logomarca de cor vermelha, com as letras P e H em formato circular."> 
     <br>
-    <a href="https://www.instagram.com/phluiz.psd/" target="_blank">@phdesign.psd</a>
-    <BR></BR>  
   </div>
     </div>      
           
-          
-          
-          
-          
-          
+
+
+
+</div>     
+            
           
           
 
@@ -65,8 +77,10 @@
   
   
     <br>
-  <p id="txt">Engenharia de Software</p>
-  
+  <p id="curso">Engenharia de Software</p>
+  <br>
+  <br>
+  <br>
   
     
     <body style="background-color:rgb(0, 0, 0);">
@@ -74,7 +88,8 @@
                         <div class="container">
                           <div class="center">
                             <form>
-                              <i class="fa fa-behance-square" style="font-size: 64px; color:red"></i>
+
+                              <i class="fa fa-behance-square" style="font-size: 64px; color:red" onclick="AbrirJanela()" ></i>
                               <input class="button"  type="button" value="Behance" onclick="AbrirJanela()"> 
                           </div>
                         </div>
@@ -86,7 +101,7 @@
                     <div class="container">
                       <div class="center">
                         <form>
-                          <i class="fa fa-github" style="font-size: 64px;color:red"></i>
+                          <i class="fa fa-github" style="font-size: 64px;color:red" onclick="AbrirGithub()"></i>
                           <input class="button" type="button" value="Github" onclick="AbrirGithub()"> 
                       </div>
                     </div>
@@ -96,7 +111,7 @@
             <div class="container">
               <div class="center">
               <form> 
-                <i class="fa fa-linkedin-square" style="font-size: 64px; color: red;"></i>
+                <i class="fa fa-linkedin-square" style="font-size: 64px; color: red;" onclick="AbrirLinkedin()"></i>
                 <input class="button" type="button" value="Linkedin" onclick="AbrirLinkedin()"> 
 
 
@@ -110,7 +125,7 @@
             <div class="container">
             <div class="center">
             <form> 
-              <i class="fa fa-youtube-square" style="font-size: 64px; color: red;"></i>
+              <i class="fa fa-youtube-square" style="font-size: 64px; color: red;" onclick="AbrirYoutube()"></i>
               <input class="button" type="button" value="Youtube" onclick="AbrirYoutube()"> 
 
               
@@ -118,17 +133,13 @@
             </div> 
             </div>
 
-
-
-
-            
+            <div class="container">
+            <div class="center">
+            <form>  
+            <i class="fa fa-instagram" style="font-size: 64px; color: red;" onclick="AbrirInstagram()"></i> 
+            <input type="button" class="button" value="Instagram" onclick="AbrirInstagram()">  
+            </form>
+            </div>   
+            </div>        
 </body>
-
-
-
-
-
-
-
-
 </html>
