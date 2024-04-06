@@ -156,6 +156,8 @@ body {
 }
 
   i{
-    text-align: justify left;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     font-size: small;
 }
