@@ -9,7 +9,7 @@
 
 body {
 
-  background-image: url(./assets/bg-desktop.jpg); 
+  background: linear-gradient(90deg, #272727 0%, #000213 100%);
   background-repeat: no-repeat;
   background-position: top center; 
   background-size: cover;   
@@ -54,7 +54,7 @@ font-style: normal;
 font-variation-settings:
 "BLED" 0,
 "SCAN" 0;
-background: linear-gradient(to right, rgb(255, 0, 0),rgb(255, 255, 255));
+background: linear-gradient(90deg, #FC466B 0%, #ff0800 100%);
 background-clip: text;
 color: transparent;
 text-align: center;
@@ -73,6 +73,7 @@ text-align: center;
   color: #ffffff;
   text-align: center;
   margin: auto;
+  padding: 10px;
   
   }
 
