@@ -54,7 +54,7 @@ font-style: normal;
 font-variation-settings:
 "BLED" 0,
 "SCAN" 0;
-background: linear-gradient(to right, rgb(221, 5, 5),rgb(255, 255, 255),rgb(255, 4, 4));
+background: linear-gradient(to right, rgb(255, 0, 0),rgb(255, 255, 255));
 background-clip: text;
 color: transparent;
 text-align: center;
