@@ -122,11 +122,13 @@ text-align: center;
 
 
 .spotify{
+  padding: 70px 0px 0px 0px;
+  margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 10px;
+  
 }
 
 ion-icon {
