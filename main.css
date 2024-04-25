@@ -29,22 +29,46 @@
 --switch-img:  white url(./lightside.svg) no-repeat center;
 }
 
+
 #switch {
-  display: block;
-  text-align: center;
+position: relative;
+width: 120px;
+display: flex;
+margin: 25px auto auto 50px;
 }
 
 
 #switch button {
   background: var(--switch-img);
-  margin: 10px;
   width: 60px;
   height: 60px;
   border: 0;
   border-radius: 50%;
-  
+  position: absolute;
+  z-index: 1;
+  transform: translateY(-50%);
+  top: 50%;
 }
 
+
+#switch span {
+  position: absolute;
+  z-index: 0;
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  height: 30px;
+  background: var(--blur-color);
+  border: solid var(--text-color) 5px;
+  border-radius: 999px;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.dark #switch button {
+  right: 0;
+  left: initial;
+}
 
 #logo{
   text-align: left;
@@ -132,7 +156,7 @@ body {
     "SCAN" 0; 
   color: var(--text-color);
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
   padding: 10px;
   
   }
@@ -143,7 +167,7 @@ body {
     height: 200px;
     width: 200px;
     display: block;
-    margin: auto;
+    margin: 0 auto;
     position: relative;
     color: #ffffff;
   }
