@@ -1,11 +1,9 @@
-#logo img{
+#logo img {
   width: 100px;
   display: flex;
   margin: 25px auto auto 50px;
   justify-content: right;
   align-items: flex-start;
-  
-  
 }
 
 :root {
@@ -16,7 +14,7 @@
   --icon-color:   rgb(163, 1, 1);
   --name-gradient: linear-gradient(90deg, rgb(32, 32, 32) 0%, #000213 100%);
   --switch-img:  white url(./darkside.svg) no-repeat center;
-
+  --tema-side: 0;
 }
 
 .dark {
@@ -27,6 +25,7 @@
 --icon-color:   rgb(231, 0, 0);
 --name-gradient: linear-gradient(90deg, rgb(250, 250, 250) 0%, #ececec 100%);
 --switch-img:  white url(./lightside.svg) no-repeat center;
+--tema-side: 1;
 }
 
 
@@ -50,6 +49,55 @@ margin: 25px auto auto 50px;
   top: 50%;
 }
 
+#temaClaro {
+  visibility: hidden;
+  display: inline;
+  font-size: 20px;
+  font-family: Poppins;    
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--icon-color);
+  position: absolute;
+  z-index: 1;
+  transform: translateY(50%);
+  top: 50%;
+  right: var(--tema-side);
+  transition: all  cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#temaEscuro {
+  visibility: hidden;
+  display: inline;
+  font-size: 20px;
+  font-family: Poppins;    
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--icon-color);
+  position: absolute;
+  z-index: 1;
+  transform: translateY(50%);
+  top: 50%;
+  right: var(--tema-side);
+  transition: all  cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.Tema {
+  visibility:visible;
+  display: inline;
+  font-size: 25px;
+  font-family: Poppins;    
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--icon-color);
+  position: absolute;
+  z-index: 1;
+  transform: translateY(50%);
+  top: 50%;
+  right: var(--tema-side);
+}
 
 #switch span {
   position: absolute;
