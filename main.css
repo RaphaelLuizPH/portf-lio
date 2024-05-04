@@ -31,15 +31,18 @@
 
 
 #switch {
-position: relative;
+align-items: center;
+position: absolute;
 width: 120px;
-display: flex;
-margin: 25px auto auto 50px;
+margin: 25px 50px; 
+top: 5%;
+right: 0;
 
 }
 
 
 #switch button {
+  overflow: hidden;
   background: var(--switch-img);
   width: 60px;
   height: 60px;
@@ -54,7 +57,6 @@ margin: 25px auto auto 50px;
 #switch span {
   position: absolute;
   z-index: 0;
-  display: block;
   margin: 0 auto;
   width: 120px;
   height: 30px;
@@ -130,6 +132,15 @@ body {
   
 
 
+#namebox {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
 #name{ 
   font-size: 80px;
   font-family: Poppins;    
@@ -142,7 +153,6 @@ body {
   background: var(--name-gradient);
   background-clip: text;
   color: transparent;
-  text-align: center;
 } 
 
 #curso{
