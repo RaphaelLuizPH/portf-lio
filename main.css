@@ -198,26 +198,6 @@ body {
   }
 }
 
-@keyframes slide {
-  from {
-    left: 0;
-  }
-  to {
-    left: 50%;
-  }
-}
-
-@keyframes slideoff {
-  from {
-    left: 50%;
-  }
-  to {
-    left: 0;
-  }
-}
-
-
-
 .spotify {
   padding: 70px 0px 0px 0px;
   margin: 10px;
@@ -256,4 +236,22 @@ ion-icon:hover {
   width: 360px;
   margin: auto;
   padding: 24px;
+}
+
+@keyframes slide {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slideoff {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
 }
