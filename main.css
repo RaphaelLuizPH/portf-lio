@@ -1,11 +1,9 @@
-#logo img{
+#logo img {
   width: 100px;
   display: flex;
   margin: 25px auto auto 50px;
   justify-content: right;
   align-items: flex-start;
-  
-  
 }
 
 :root {
@@ -16,7 +14,7 @@
   --icon-color:   rgb(163, 1, 1);
   --name-gradient: linear-gradient(90deg, rgb(32, 32, 32) 0%, #000213 100%);
   --switch-img:  white url(./darkside.svg) no-repeat center;
-
+  --tema-side: 0;
 }
 
 .dark {
@@ -27,18 +25,24 @@
 --icon-color:   rgb(231, 0, 0);
 --name-gradient: linear-gradient(90deg, rgb(250, 250, 250) 0%, #ececec 100%);
 --switch-img:  white url(./lightside.svg) no-repeat center;
+--tema-side: 1;
+
 }
 
 
 #switch {
-position: relative;
+align-items: center;
+position: absolute;
 width: 120px;
-display: flex;
-margin: 25px auto auto 50px;
+margin: 25px 50px; 
+top: 5%;
+right: 0;
+
 }
 
 
 #switch button {
+  overflow: hidden;
   background: var(--switch-img);
   width: 60px;
   height: 60px;
@@ -50,11 +54,9 @@ margin: 25px auto auto 50px;
   top: 50%;
 }
 
-
 #switch span {
   position: absolute;
   z-index: 0;
-  display: block;
   margin: 0 auto;
   width: 120px;
   height: 30px;
@@ -68,6 +70,7 @@ margin: 25px auto auto 50px;
 .dark #switch button {
   right: 0;
   left: initial;
+  
 }
 
 #logo{
@@ -129,6 +132,15 @@ body {
   
 
 
+#namebox {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
 #name{ 
   font-size: 80px;
   font-family: Poppins;    
@@ -141,7 +153,6 @@ body {
   background: var(--name-gradient);
   background-clip: text;
   color: transparent;
-  text-align: center;
 } 
 
 #curso{
