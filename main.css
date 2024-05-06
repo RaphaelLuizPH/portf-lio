@@ -10,36 +10,32 @@
   --text-color: black;
   --background: linear-gradient(90deg, #f1eeee 0%, #1817172c 100%);
   --shadow-color: rgb(0, 0, 0);
-  --blur-color:  rgba(128, 128, 128, 0.329);
-  --icon-color:   rgb(163, 1, 1);
+  --blur-color: rgba(128, 128, 128, 0.329);
+  --icon-color: rgb(163, 1, 1);
   --name-gradient: linear-gradient(90deg, rgb(32, 32, 32) 0%, #000213 100%);
-  --switch-img:  white url(./darkside.svg) no-repeat center;
+  --switch-img: white url(./darkside.svg) no-repeat center;
   --tema-side: 0;
 }
 
 .dark {
---text-color: white; 
---background: linear-gradient(90deg, rgb(32, 32, 32) 0%, #000213 100%);
---shadow-color: rgb(255, 255, 255);
---blur-color:   rgba(0, 0, 0, 0.1);
---icon-color:   rgb(231, 0, 0);
---name-gradient: linear-gradient(90deg, rgb(250, 250, 250) 0%, #ececec 100%);
---switch-img:  white url(./lightside.svg) no-repeat center;
---tema-side: 1;
-
+  --text-color: white;
+  --background: linear-gradient(90deg, rgb(32, 32, 32) 0%, #000213 100%);
+  --shadow-color: rgb(255, 255, 255);
+  --blur-color: rgba(0, 0, 0, 0.1);
+  --icon-color: rgb(231, 0, 0);
+  --name-gradient: linear-gradient(90deg, rgb(250, 250, 250) 0%, #ececec 100%);
+  --switch-img: white url(./lightside.svg) no-repeat center;
+  --tema-side: 1;
 }
-
 
 #switch {
-align-items: center;
-position: absolute;
-width: 120px;
-margin: 25px 50px; 
-top: 5%;
-right: 0;
-
+  align-items: center;
+  position: absolute;
+  width: 120px;
+  margin: 25px 50px;
+  top: 5%;
+  right: 0;
 }
-
 
 #switch button {
   overflow: hidden;
@@ -70,21 +66,20 @@ right: 0;
 .dark #switch button {
   right: 0;
   left: initial;
-  
 }
 
-#logo{
+#logo {
   text-align: left;
 }
 
-#txt:hover{
+#txt:hover {
   filter: blur(0px);
 }
 
 #txt {
   display: inline;
   font-size: 20px;
-  font-family: Poppins;    
+  font-family: Poppins;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -94,43 +89,36 @@ right: 0;
 }
 
 body {
-
   background: var(--background);
   background-repeat: no-repeat;
-  background-position: top center; 
-  background-size: cover;   
-  }
+  background-position: top center;
+  background-size: cover;
+}
 
 * {
   margin: 0;
-  padding: 0;  
+  padding: 0;
   box-sizing: border-box;
 }
 
-
 .center {
-    background: var(--blur-color);
-    backdrop-filter: blur(5px);
-    padding: 25px 25px;
-    text-align: center;
-    text-decoration-thickness: auto; 
-    display: flexbox;
-    flex-direction: row;
-    margin-top: 1px;
-    border-radius: 30px;
-    box-shadow: 10px 10px var(--shadow-color) ;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    
-    
-  } 
-  
-  
-
+  background: var(--blur-color);
+  backdrop-filter: blur(5px);
+  padding: 25px 25px;
+  text-align: center;
+  text-decoration-thickness: auto;
+  display: flexbox;
+  flex-direction: row;
+  margin-top: 1px;
+  border-radius: 30px;
+  box-shadow: 10px 10px var(--shadow-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
 
 #namebox {
   flex-direction: column;
@@ -140,68 +128,71 @@ body {
   text-align: center;
 }
 
-
-#name{ 
+#name {
   font-size: 80px;
-  font-family: Poppins;    
+  font-family: Poppins;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-variation-settings:
-  "BLED" 0,
-  "SCAN" 0;
+  font-variation-settings: "BLED" 0, "SCAN" 0;
   background: var(--name-gradient);
   background-clip: text;
   color: transparent;
-} 
+}
 
-#curso{
-
+#curso {
   font-size: 32px;
   font-family: "Workbench", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "BLED" 0,
-    "SCAN" 0; 
+  font-variation-settings: "BLED" 0, "SCAN" 0;
   color: var(--text-color);
   text-align: center;
   margin: 0 auto;
   padding: 10px;
-  
-  }
-
-
-.container {
-  
-    height: 200px;
-    width: 200px;
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    color: #ffffff;
-  }
-
-
-@keyframes blurry {
-  0% {font-size: 64px;}
-  20% {font-size: 80px; filter: blur(10px);}
-  40% {font-size: 100px; }
-  60% {font-size: 150px;}  
-  90% {font-size: 150px; color: var(--text-color); }
-  100% {font-size: 64px; color: var(--text-color);}
 }
 
+.container {
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  color: #ffffff;
+}
 
-.spotify{
+@keyframes blurry {
+  0% {
+    font-size: 64px;
+  }
+  20% {
+    font-size: 80px;
+    filter: blur(10px);
+  }
+  40% {
+    font-size: 100px;
+  }
+  60% {
+    font-size: 150px;
+  }
+  90% {
+    font-size: 150px;
+    color: var(--text-color);
+  }
+  100% {
+    font-size: 64px;
+    color: var(--text-color);
+  }
+}
+
+.spotify {
   padding: 70px 0px 0px 0px;
   margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  
 }
 
 ion-icon {
@@ -215,29 +206,40 @@ ion-icon {
   text-align: center;
 }
 
-
-ion-icon:hover{
+ion-icon:hover {
   animation-name: blurry;
-  animation-duration: 2s; 
+  animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: -1s;
-
 }
 
-.legenda{
+.legenda {
   color: var(--text-color);
   font-size: 16px;
   text-align: center;
   font-family: poppins;
 }
 
-
 #container {
   width: 360px;
-  margin: auto; 
+  margin: auto;
   padding: 24px;
 }
 
+@keyframes slide {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
 
-
-
+@keyframes slideoff {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
