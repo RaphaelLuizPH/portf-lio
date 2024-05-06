@@ -13,16 +13,11 @@
   --blur-color: rgba(128, 128, 128, 0.329);
   --icon-color: rgb(163, 1, 1);
   --name-gradient: linear-gradient(90deg, rgb(32, 32, 32) 0%, #000213 100%);
-<<<<<<< HEAD
   --switch-img: white url(./darkside.svg) no-repeat center;
-=======
-  --switch-img:  white url(./darkside.svg) no-repeat center;
->>>>>>> 9621d49543df38feaba082ebcc61772663f87a80
   --tema-side: 0;
 }
 
 .dark {
-<<<<<<< HEAD
   --text-color: white;
   --background: linear-gradient(90deg, rgb(32, 32, 32) 0%, #000213 100%);
   --shadow-color: rgb(255, 255, 255);
@@ -31,36 +26,15 @@
   --name-gradient: linear-gradient(90deg, rgb(250, 250, 250) 0%, #ececec 100%);
   --switch-img: white url(./lightside.svg) no-repeat center;
   --tema-side: 1;
-=======
---text-color: white; 
---background: linear-gradient(90deg, rgb(32, 32, 32) 0%, #000213 100%);
---shadow-color: rgb(255, 255, 255);
---blur-color:   rgba(0, 0, 0, 0.1);
---icon-color:   rgb(231, 0, 0);
---name-gradient: linear-gradient(90deg, rgb(250, 250, 250) 0%, #ececec 100%);
---switch-img:  white url(./lightside.svg) no-repeat center;
---tema-side: 1;
-
->>>>>>> 9621d49543df38feaba082ebcc61772663f87a80
 }
 
 #switch {
-<<<<<<< HEAD
   align-items: center;
   position: absolute;
   width: 120px;
   margin: 25px 50px;
   top: 5%;
   right: 0;
-=======
-align-items: center;
-position: absolute;
-width: 120px;
-margin: 25px 50px; 
-top: 5%;
-right: 0;
-
->>>>>>> 9621d49543df38feaba082ebcc61772663f87a80
 }
 
 #switch button {
@@ -90,15 +64,9 @@ right: 0;
 }
 
 .dark #switch button {
-<<<<<<< HEAD
   animation-name: slide;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
-=======
-  right: 0;
-  left: initial;
-  
->>>>>>> 9621d49543df38feaba082ebcc61772663f87a80
 }
 
 #logo {
@@ -165,20 +133,7 @@ body {
   text-align: center;
 }
 
-<<<<<<< HEAD
 #name {
-=======
-#namebox {
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-
-#name{ 
->>>>>>> 9621d49543df38feaba082ebcc61772663f87a80
   font-size: 80px;
   font-family: Poppins;
   font-optical-sizing: auto;
@@ -188,13 +143,7 @@ body {
   background: var(--name-gradient);
   background-clip: text;
   color: transparent;
-<<<<<<< HEAD
 }
-=======
-} 
-
-#curso{
->>>>>>> 9621d49543df38feaba082ebcc61772663f87a80
 
 #curso {
   font-size: 32px;
