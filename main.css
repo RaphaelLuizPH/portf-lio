@@ -111,7 +111,8 @@ body {
 }
 
 .center {
-  width: 200px;
+  max-width: 500px;
+  width: 100%;
   background: var(--blur-color);
   backdrop-filter: blur(5px);
   text-align: center;
@@ -176,6 +177,7 @@ footer {
 }
 
 .container {
+  
   height: 150px;
   display: block;
   margin: auto;
@@ -212,7 +214,6 @@ ion-icon {
   padding-bottom: 5px;
   font-size: 64px;
   transition: all 2.5s ease-in-out;
-  display: block;
   margin: auto;
   justify-content: center;
   text-align: center;
