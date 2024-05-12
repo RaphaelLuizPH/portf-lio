@@ -8,7 +8,7 @@
 
 :root {
   --text-color: black;
-  --background: linear-gradient(90deg, #f1eeee 0%, #1817172c 100%);
+  --background: linear-gradient(90deg, #f1eeee 0%, #1817172c 100%) 100vh 100vw;
   --shadow-color: rgb(0, 0, 0);
   --blur-color: rgba(128, 128, 128, 0.329);
   --icon-color: rgb(163, 1, 1);
@@ -19,7 +19,8 @@
 
 .dark {
   --text-color: white;
-  --background: linear-gradient(90deg, rgb(32, 32, 32) 0%, #000213 100%);
+  --background: linear-gradient(90deg, rgb(32, 32, 32) 0%, #000213 100%) 100vh
+    100vw;
   --shadow-color: rgb(255, 255, 255);
   --blur-color: rgba(0, 0, 0, 0.1);
   --icon-color: rgb(231, 0, 0);
@@ -27,6 +28,12 @@
   --switch-img: white url(./lightside.svg) no-repeat center;
   --tema-side: 1;
 }
+
+
+a {
+  text-decoration: none;
+}
+
 
 #switch {
   align-items: center;
@@ -50,12 +57,17 @@
   animation: slideoff 0.5s forwards;
 }
 
+#switch button:hover {
+  outline: 8px solid var(--icon-color);
+  cursor: pointer;
+}
+
 #switch span {
   position: absolute;
   z-index: 0;
   margin: 0 auto;
-  width: 120px;
-  height: 30px;
+  width: 119px;
+  height: 10px;
   background: var(--blur-color);
   border: solid var(--text-color) 5px;
   border-radius: 999px;
@@ -94,10 +106,8 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-}
-
-.dark html {
-  animation: background 1s;
+  height: 100%vh;
+  width: 100%vw;
 }
 
 * {
@@ -107,20 +117,18 @@ body {
 }
 
 .center {
+  max-width: 500px;
+  width: 100%;
   background: var(--blur-color);
   backdrop-filter: blur(5px);
-  padding: 25px 25px;
   text-align: center;
   text-decoration-thickness: auto;
-  display: flexbox;
-  flex-direction: row;
   margin-top: 1px;
   border-radius: 30px;
   box-shadow: 10px 10px var(--shadow-color);
   position: absolute;
   top: 50%;
   left: 50%;
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
@@ -158,11 +166,27 @@ body {
   padding: 10px;
 }
 
+form {
+  display: inline;
+}
+
+footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  color: var(--text-color);
+  padding: 50px;
+}
+
 .container {
-  height: 200px;
-  width: 200px;
+  
+  height: 150px;
   display: block;
-  margin: 0 auto;
+  margin: auto;
   position: relative;
   color: #ffffff;
 }
@@ -172,17 +196,17 @@ body {
     font-size: 64px;
   }
   20% {
-    font-size: 80px;
+    font-size: 70px;
     filter: blur(10px);
   }
   40% {
-    font-size: 100px;
+    font-size: 80px;
   }
   60% {
-    font-size: 150px;
+    font-size: 90px;
   }
   90% {
-    font-size: 150px;
+    font-size: 80px;
     color: var(--text-color);
   }
   100% {
@@ -191,41 +215,11 @@ body {
   }
 }
 
-@keyframes slide {
-  from {
-    left: 0;
-  }
-  to {
-    left: 50%;
-  }
-}
-
-@keyframes slideoff {
-  from {
-    left: 50%;
-  }
-  to {
-    left: 0;
-  }
-}
-
-
-
-.spotify {
-  padding: 70px 0px 0px 0px;
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 ion-icon {
   color: var(--icon-color);
   padding-bottom: 5px;
   font-size: 64px;
-  transition: font-size 2.5s ease-in-out;
-  display: block;
+  transition: all 2.5s ease-in-out;
   margin: auto;
   justify-content: center;
   text-align: center;
@@ -249,4 +243,22 @@ ion-icon:hover {
   width: 360px;
   margin: auto;
   padding: 24px;
+}
+
+@keyframes slide {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slideoff {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
 }
