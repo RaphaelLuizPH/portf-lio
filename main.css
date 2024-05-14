@@ -22,18 +22,16 @@
   --background: linear-gradient(90deg, rgb(32, 32, 32) 0%, #000213 100%) 100vh
     100vw;
   --shadow-color: rgb(255, 255, 255);
-  --blur-color: rgba(0, 0, 0, 0.1);
+  --blur-color: rgba(248, 239, 239, 0.151);
   --icon-color: rgb(231, 0, 0);
   --name-gradient: linear-gradient(90deg, rgb(250, 250, 250) 0%, #ececec 100%);
   --switch-img: white url(./lightside.svg) no-repeat center;
   --tema-side: 1;
 }
 
-
 a {
   text-decoration: none;
 }
-
 
 #switch {
   align-items: center;
@@ -57,6 +55,12 @@ a {
   animation: slideoff 0.5s forwards;
 }
 
+.dark #switch button {
+  animation-name: slide;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
 #switch button:hover {
   outline: 8px solid var(--icon-color);
   cursor: pointer;
@@ -73,12 +77,6 @@ a {
   border-radius: 999px;
   transform: translateY(-50%);
   top: 50%;
-}
-
-.dark #switch button {
-  animation-name: slide;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
 }
 
 #logo {
@@ -103,11 +101,11 @@ a {
 
 body {
   background: var(--background);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: top center;
   background-size: cover;
-  height: 100%vh;
-  width: 100%vw;
+  height: 100%;
+  width: 100%;
 }
 
 * {
@@ -116,21 +114,55 @@ body {
   box-sizing: border-box;
 }
 
-.center {
-  max-width: 500px;
+.links {
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
   width: 100%;
-  background: var(--blur-color);
-  backdrop-filter: blur(5px);
+  max-width: 1080px;
+  height: 100%;
+  max-height: 100px;
+  
+}
+
+form:hover .legenda {
+  visibility: visible;
+}
+
+.legenda {
+  color: var(--text-color);
+  font-size: 16px;
   text-align: center;
-  text-decoration-thickness: auto;
-  margin-top: 1px;
-  border-radius: 30px;
-  box-shadow: 10px 10px var(--shadow-color);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  font-family: poppins;
+  visibility: hidden;
+  transition: all ease-in-out 0.5s;
+}
+
+#section0 {
+  margin: 10%;
+  display: block;
+}
+
+ion-icon {
+  margin: auto;
+  padding: 5px;
+  display: flex;
+  border-radius: 8px;
+  color: var(--icon-color);
+  font-size: 64px;
+  transition: all 0.1s ease-in-out;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffffff2c;
+  
+}
+
+ion-icon:hover {
+  color: var(--text-color);
+  font-size: 75px;
+  box-shadow: -10px 5px 100px var(--shadow-color);
 }
 
 #namebox {
@@ -155,9 +187,9 @@ body {
 
 #curso {
   font-size: 32px;
-  font-family: "Workbench", sans-serif;
+  font-family: Poppins;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   font-variation-settings: "BLED" 0, "SCAN" 0;
   color: var(--text-color);
@@ -167,7 +199,8 @@ body {
 }
 
 form {
-  display: inline;
+  display: block;
+  margin: auto;
 }
 
 footer {
@@ -183,7 +216,6 @@ footer {
 }
 
 .container {
-  
   height: 150px;
   display: block;
   margin: auto;
@@ -191,59 +223,76 @@ footer {
   color: #ffffff;
 }
 
-@keyframes blurry {
-  0% {
-    font-size: 64px;
-  }
-  20% {
-    font-size: 70px;
-    filter: blur(10px);
-  }
-  40% {
-    font-size: 80px;
-  }
-  60% {
-    font-size: 90px;
-  }
-  90% {
-    font-size: 80px;
-    color: var(--text-color);
-  }
-  100% {
-    font-size: 64px;
-    color: var(--text-color);
-  }
-}
-
-ion-icon {
-  color: var(--icon-color);
-  padding-bottom: 5px;
-  font-size: 64px;
-  transition: all 2.5s ease-in-out;
-  margin: auto;
-  justify-content: center;
-  text-align: center;
-}
-
-ion-icon:hover {
-  animation-name: blurry;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  animation-delay: -1s;
-}
-
-.legenda {
-  color: var(--text-color);
-  font-size: 16px;
-  text-align: center;
-  font-family: poppins;
-}
 
 #container {
   width: 360px;
   margin: auto;
   padding: 24px;
 }
+
+
+@media(max-width: 600px){
+
+  .links {
+    
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    max-width: 1080px;
+    height: 100%;
+    max-height: 1080px;
+
+  }
+
+  .legenda {
+    display: flex;
+    align-items: last baseline;
+    justify-content: flex-end;
+    color: var(--text-color);
+    font-size: 16px;
+    text-align: center;
+    font-family: poppins;
+    display: none;
+    transition: all ease-in-out 0.5s;
+  }
+    ion-icon {
+
+      border-radius: 9px;
+      color: var(--icon-color);
+      padding-left: 5px;
+      font-size: 32px;
+      transition: all 0.1s ease-in-out;
+      justify-content: center;
+      text-align: center;
+      margin: 10%;
+    }
+  }
+
+
+
+
+
+
+
+@keyframes blurry {
+  0% {
+    font-size: 64px;
+    filter: blur(10px);
+  }
+  20% {
+    font-size: 70px;
+  }
+  90% {
+    color: var(--text-color);
+  }
+  100% {
+    color: var(--text-color);
+  }
+}
+
 
 @keyframes slide {
   from {
