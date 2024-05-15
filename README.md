@@ -1,8 +1,9 @@
 
 # portf-lio
 
-
-![image](https://github.com/RaphaelLuizPH/portf-lio/assets/130625114/efe80c83-24f1-4d0d-9230-6bbddc7e7207)
+# Dark 
+![image](https://github.com/RaphaelLuizPH/portf-lio/assets/130625114/efe80c83-24f1-4d0d-9230-6bbddc7e7207) 
+# Light 
 ![image](https://github.com/RaphaelLuizPH/portf-lio/assets/130625114/dcd57622-9012-4416-a75e-728b7c6828f8)
 
 
