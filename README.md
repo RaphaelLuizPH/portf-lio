@@ -1,6 +1,6 @@
 
-# portif-lio
-Um página que leva o usuário ao meu linktree. 
+# portf-lio
+Projeto em HTML, CSS e JavaScript inicialmente uma atividade para a disciplina Desenvolvimento Front-End da Universidade Católica de Brasília de tema livre. Posteriormente continuei trabalhando em seu design e funcionalidade. A função deste projeto é de ser uma Linktree com todos os meus links pessoais.
 
 ## Descrição
 
