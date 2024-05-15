@@ -1,123 +1,197 @@
 <!DOCTYPE html>
-<html class="dark"> 
+<html class="dark">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Workbench&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Workbench&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+      lang="pt-br"
+    />
+    <title>Linktree</title>
+  </head>
 
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="main.css">
-  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <meta name='viewport' content='width=device-width, initial-scale=1' lang="pt-br">
-  <title>Linktree</title>
-</head> 
-
-<body onload="startTime()">
-
-<div id="logo">
-  
-    <img id="PH" src="./Ativo 7@300x-8.png" alt="Logomarca de cor vermelha, com as letras P e H em formato circular."> 
-    <div id="txt"> </div> 
-    
-    <div id="switch" onclick="mudarTema()">    
-      <button></button> 
-      <span></span>
+  <body onload="startTime()">
+    <div id="logo">
+      <img
+        id="PH"
+        src="./Ativo 7@300x-8.png"
+        alt="Logomarca de cor vermelha, com as letras P e H em formato circular."
+      />
+      <div id="txt"></div>
+      <div id="switch" onclick="mudarTema()">
+        <button></button>
+        <span></span>
       </div>
-</div>  
-<div id="namebox">
-  <h1 id="name">RAPHAEL LUIZ</h1>
-    <p id="curso">Engenharia de Software</p>
-</div>
+    </div>
+    <div id="namebox">
+      <h1 id="name">RAPHAEL LUIZ</h1>
+      <p id="curso">Engenharia de Software</p>
+    </div>
 
-<div class="container">
-  <div class="center">
-    <form>
-      <a href="https://www.behance.net/raphaelluizdesousa" target="_blank">
-        <ion-icon name="logo-behance" id="logo-behance"></ion-icon>
-      </a>
-        <h1 class="legenda">Behance</h1>
-  </div>
-  </div>
-    </form>
-
-
-
-
-<div class="container">
-  <div class="center">
-    <form>
-    <a href="https://github.com/RaphaelLuizPH" target="_blank">
-    <ion-icon name="logo-github" id="logo-github"></ion-icon>
-    </a>
-    <h1 class="legenda">Github</h1>
-</div>
-  </div>
-    </form>
-
-<div class="container">
-  <div class="center">
-    <form> 
-    <a href="https://br.linkedin.com/in/raphaelluizss" target="_blank">
-    <ion-icon name="logo-linkedin" id="logo-linkedin"></ion-icon>
-    </a>
-    <h1 class="legenda">Linkedin</h1>
-</div> 
-  </div>
-    </form>
-
-
-<div class="container">
-  <div class="center">
-    <form> 
-    <a href="https://www.youtube.com/@PHLuiz" target="_blank">
-    <ion-icon name="logo-youtube" id="logo-youtube"></ion-icon>
-    </a>
-    <h1 class="legenda">Youtube</h1>
-</div> 
-  </div>
-    </form>
-
-<div class="container">
-  <div class="center">
-    <form>  
-  <a href="https://www.instagram.com/phluiz.psd/" target="_blank">
-    <ion-icon name="logo-instagram" id="logo-instagram"> </ion-icon>
-  </a>
-  <h1 class="legenda">Insta</h1>
-  </div>   
-    </div>        
-    </form>
-
-    <div class="container">
-      <div class="center">
-        <form>  
-      <a href="./assets/Currículo.pdf" download>
-        <ion-icon name="download"></ion-icon>
-      </a>
-    <a href="./assets/Currículo.pdf" target="_blank">
-      <ion-icon name="document" id="document">
-
-      </ion-icon>
-    </a> 
-
-      <h1 class="legenda">Currículo</h1>
-      </div>   
-        </div>        
+    <section id="section0">
+      <div class="links">
+        <form>
+          <a href="https://www.behance.net/raphaelluizdesousa" target="_blank">
+            <ion-icon name="logo-behance" id="logo-behance"></ion-icon>
+            <h1 class="legenda">Behance</h1></a
+          >
         </form>
+        <form>
+          <a href="https://github.com/RaphaelLuizPH" target="_blank">
+            <ion-icon name="logo-github" id="logo-github"></ion-icon>
+            <h1 class="legenda">Github</h1>
+          </a>
+        </form>
+        <form>
+          <a href="https://br.linkedin.com/in/raphaelluizss" target="_blank">
+            <ion-icon name="logo-linkedin" id="logo-linkedin"></ion-icon>
+            <h1 class="legenda">Linkedin</h1>
+          </a>
+        </form>
+        <form>
+          <a href="https://www.youtube.com/@PHLuiz" target="_blank">
+            <ion-icon name="logo-youtube" id="logo-youtube"></ion-icon>
+            <h1 class="legenda">Youtube</h1>
+          </a>
+        </form>
+        <form>
+          <a href="https://www.instagram.com/phluiz.psd/" target="_blank">
+            <ion-icon name="logo-instagram" id="logo-instagram"> </ion-icon>
+            <h1 class="legenda">Insta</h1>
+          </a>
+        </form>
+        <form>
+          <a href="./assets/Currículo.pdf" target="_blank">
+            <ion-icon name="document" id="document"> </ion-icon>
+            <h1 class="legenda">Currículo</h1>
+          </a>
+        </form>
+      </div>
+    </section>
+    <br />
+    <br />
 
-<footer>Site criado no primeiro semestre do curso Engenharia de Software <br> 
-  na Universidade Católica de Brasília. 2024.</footer>
+    <section id="portifoliobehance">
+      <iframe class="behancecard"
+        src="https://www.behance.net/embed/project/196156797?ilo0=1"
+        height="316"
+        width="404"
+        allowfullscreen
+        lazyload
+        frameborder="0"
+        allow="clipboard-write"
+        refererPolicy="strict-origin-when-cross-origin"
+      ></iframe>
+      <iframe class="behancecard"
+        src="https://www.behance.net/embed/project/195139849?ilo0=1"
+        height="316"
+        width="404"
+        allowfullscreen
+        lazyload
+        frameborder="0"
+        allow="clipboard-write"
+        refererPolicy="strict-origin-when-cross-origin"
+      ></iframe>
+      <iframe class="behancecard"
+        src="https://www.behance.net/embed/project/189250749?ilo0=1"
+        height="316"
+        width="404"
+        allowfullscreen
+        lazyload
+        frameborder="0"
+        allow="clipboard-write"
+        refererPolicy="strict-origin-when-cross-origin"
+      ></iframe>
+      <iframe class="behancecard"
+        src="https://www.behance.net/embed/project/186179643?ilo0=1"
+        height="316"
+        width="404"
+        allowfullscreen
+        lazyload
+        frameborder="0"
+        allow="clipboard-write"
+        refererPolicy="strict-origin-when-cross-origin"
+      ></iframe>
+      <iframe class="behancecard"
+        src="https://www.behance.net/embed/project/186177877?ilo0=1"
+        height="316"
+        width="404"
+        allowfullscreen
+        lazyload
+        frameborder="0"
+        allow="clipboard-write"
+        refererPolicy="strict-origin-when-cross-origin"
+      ></iframe>
+      <iframe class="behancecard"
+        src="https://www.behance.net/embed/project/194824253?ilo0=1"
+        height="316"
+        width="404"
+        allowfullscreen
+        lazyload
+        frameborder="0"
+        allow="clipboard-write"
+        refererPolicy="strict-origin-when-cross-origin"
+      ></iframe>
+      <iframe  class="behancecard"
+        src="https://www.behance.net/embed/project/186179495?ilo0=1"
+        height="316"
+        width="404"
+        allowfullscreen
+        lazyload
+        frameborder="0"
+        allow="clipboard-write"
+        refererPolicy="strict-origin-when-cross-origin"
+      ></iframe>
+      <iframe class="behancecard"
+        src="https://www.behance.net/embed/project/195969593?ilo0=1"
+        height="316"
+        width="404"
+        allowfullscreen
+        lazyload
+        frameborder="0"
+        allow="clipboard-write"
+        refererPolicy="strict-origin-when-cross-origin"
+      ></iframe>
+    </section>
 
-<script src='main.js'></script> 
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+    <footer>
+      Site criado no primeiro semestre do curso Engenharia de Software <br />
+      na Universidade Católica de Brasília. 2024.
+    </footer>
+
+    <script src="main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
