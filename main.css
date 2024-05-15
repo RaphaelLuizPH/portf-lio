@@ -83,10 +83,6 @@ a {
   text-align: left;
 }
 
-#txt:hover {
-  filter: blur(0px);
-}
-
 #txt {
   display: inline;
   font-size: 20px;
@@ -124,7 +120,6 @@ body {
   max-width: 1080px;
   height: 100%;
   max-height: 100px;
-  
 }
 
 form:hover .legenda {
@@ -137,7 +132,11 @@ form:hover .legenda {
   text-align: center;
   font-family: poppins;
   visibility: hidden;
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0s;
+}
+
+.legenda:visited {
+  color: purple;
 }
 
 #section0 {
@@ -155,8 +154,7 @@ ion-icon {
   transition: all 0.1s ease-in-out;
   justify-content: center;
   text-align: center;
-  background-color: #ffffff2c;
-  
+  background-color: #ffffff00;
 }
 
 ion-icon:hover {
@@ -164,6 +162,43 @@ ion-icon:hover {
   font-size: 75px;
   box-shadow: -10px 5px 100px var(--shadow-color);
 }
+
+
+#portifoliobehance {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  overflow: auto;
+}
+
+.dark .behancecard {
+  filter: grayscale();
+  transition: all 0.5s ;
+  
+  }
+
+.dark .behancecard:hover {
+filter: none;
+
+}
+
+
+.behancecard {
+  filter: none;
+  transition: all 0.5s ;
+  
+  }
+
+.behancecard:hover {
+
+filter: grayscale();
+}
+
+
+
 
 #namebox {
   flex-direction: column;
@@ -223,18 +258,14 @@ footer {
   color: #ffffff;
 }
 
-
 #container {
   width: 360px;
   margin: auto;
   padding: 24px;
 }
 
-
-@media(max-width: 600px){
-
+@media (max-width: 600px) {
   .links {
-    
     display: flex;
     flex-flow: wrap row;
     justify-content: space-around;
@@ -244,7 +275,6 @@ footer {
     max-width: 1080px;
     height: 100%;
     max-height: 1080px;
-
   }
 
   .legenda {
@@ -258,24 +288,33 @@ footer {
     display: none;
     transition: all ease-in-out 0.5s;
   }
-    ion-icon {
-
-      border-radius: 9px;
-      color: var(--icon-color);
-      padding-left: 5px;
-      font-size: 32px;
-      transition: all 0.1s ease-in-out;
-      justify-content: center;
-      text-align: center;
-      margin: 10%;
-    }
+  ion-icon {
+    border-radius: 9px;
+    color: var(--icon-color);
+    padding-left: 5px;
+    font-size: 32px;
+    transition: all 0.1s ease-in-out;
+    justify-content: center;
+    text-align: center;
+    margin: 10%;
   }
 
+  
+  .dark .behancecard {
+  filter: none;
+  
+  }
+  
+  
+  .behancecard {
+    filter: none;
+    transition: all 0.5s ;
+    
+    }
+  
 
 
-
-
-
+}
 
 @keyframes blurry {
   0% {
@@ -292,7 +331,6 @@ footer {
     color: var(--text-color);
   }
 }
-
 
 @keyframes slide {
   from {
