@@ -1,10 +1,18 @@
 
-# portif-lio
-Um página que leva o usuário ao meu linktree. 
+# portf-lio
+
+# Dark 
+![image](https://github.com/RaphaelLuizPH/portf-lio/assets/130625114/efe80c83-24f1-4d0d-9230-6bbddc7e7207) 
+# Light 
+![image](https://github.com/RaphaelLuizPH/portf-lio/assets/130625114/dcd57622-9012-4416-a75e-728b7c6828f8)
+
+
 
 ## Descrição
 
-O objetivo deste projeto é apresentar os links de minhas diversas plataformas.
+Projeto em HTML, CSS e JavaScript inicialmente uma atividade para a disciplina Desenvolvimento Front-End na Universidade Católica de Brasília, de tema livre. 
+
+Posteriormente continuei trabalhando em seu design e funcionalidade. A função deste projeto é de ser uma Linktree com todos os meus links pessoais.
 
 ## Tecnologias Utilizadas
 
