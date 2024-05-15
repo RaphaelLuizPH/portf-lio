@@ -1,6 +1,6 @@
 
 # portf-lio
-Projeto em HTML, CSS e JavaScript inicialmente uma atividade para a disciplina Desenvolvimento Front-End da Universidade Católica de Brasília de tema livre. Posteriormente continuei trabalhando em seu design e funcionalidade. A função deste projeto é de ser uma Linktree com todos os meus links pessoais.
+
 
 ![image](https://github.com/RaphaelLuizPH/portf-lio/assets/130625114/efe80c83-24f1-4d0d-9230-6bbddc7e7207)
 
@@ -8,7 +8,9 @@ Projeto em HTML, CSS e JavaScript inicialmente uma atividade para a disciplina D
 
 ## Descrição
 
-O objetivo deste projeto é apresentar os links de minhas diversas plataformas.
+Projeto em HTML, CSS e JavaScript inicialmente uma atividade para a disciplina Desenvolvimento Front-End na Universidade Católica de Brasília, de tema livre. 
+
+Posteriormente continuei trabalhando em seu design e funcionalidade. A função deste projeto é de ser uma Linktree com todos os meus links pessoais.
 
 ## Tecnologias Utilizadas
 
