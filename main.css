@@ -1,10 +1,4 @@
-#logo img {
-  width: 100px;
-  display: flex;
-  margin: 25px auto auto 50px;
-  justify-content: right;
-  align-items: flex-start;
-}
+
 
 :root {
   --text-color: black;
@@ -83,6 +77,17 @@ a {
   text-align: left;
 }
 
+#logo img {
+  width: 100px;
+  display: flex;
+  margin: 25px auto auto 50px;
+  justify-content: right;
+  align-items: flex-start;
+}
+
+
+
+
 #txt {
   display: inline;
   font-size: 20px;
@@ -102,6 +107,7 @@ body {
   background-size: cover;
   height: 100%;
   width: 100%;
+  
 }
 
 * {
@@ -312,9 +318,24 @@ footer {
     
     }
   
+    #name {
+      font-size: 50px;
+      font-family: Poppins;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      font-variation-settings: "BLED" 0, "SCAN" 0;
+      background: var(--name-gradient);
+      background-clip: text;
+      color: transparent;
+    }
 
+    #curso {
+      font-size: 12px;
+}
 
 }
+
 
 @keyframes blurry {
   0% {
