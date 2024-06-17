@@ -5,7 +5,7 @@ function mudarTema() {
   const html = document.documentElement;
   html.classList.toggle("dark");
 }
-
+/*
 function startTime() {
   const today = new Date();
   let h = today.getHours();
@@ -26,3 +26,4 @@ function ChecarTempo(i) {
   }
   return i;
 }
+*/
