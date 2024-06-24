@@ -35,6 +35,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 a {
@@ -52,31 +53,32 @@ section {
   align-items: center;
 }
 
-#switch {
-  align-items: center;
-  position: absolute;
-  width: 120px;
-  margin: 3%;
-  top: 0;
-  right: 0;
+#navbar {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: var(--blur-color);
+  backdrop-filter: blur(60px);
+  opacity: 0.1;
+  transition: all 1s;
 }
 
-#switch button {
-  overflow: hidden;
-  background: var(--switch-img);
-  width: 60px;
-  height: 60px;
-  border: 0;
-  border-radius: 50%;
+#navbar:hover {
+  opacity: 1;
+}
+
+#switch {
   position: absolute;
-  z-index: 1;
-  transform: translateY(-50%);
-  animation: slideoff 0.5s forwards;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  top: 25%;
+  right: 0;
 }
 
 .dark #switch button {
   animation-name: slide;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
@@ -85,14 +87,27 @@ section {
   cursor: pointer;
 }
 
+#switch button {
+  overflow: hidden;
+  background: var(--switch-img);
+  width: 50px;
+  height: 50px;
+  border: 0;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  transform: translateY(-50%);
+  animation: slideoff 1s forwards;
+}
+
 #switch span {
   position: absolute;
   z-index: 0;
   margin: 0 auto;
-  width: 119px;
+  width: 100px;
   height: 10px;
-  background: var(--blur-color);
-  border: solid var(--text-color) 5px;
+  background: var(--text-color);
+  border: var(--icon-color);
   border-radius: 999px;
   transform: translateY(-50%);
   top: 50%;
@@ -115,10 +130,7 @@ section {
 #menucont {
   display: flex;
   margin: auto;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 50px;
+  height: 150px;
   position: relative;
 }
 
@@ -135,14 +147,14 @@ section {
   justify-content: center;
   color: var(--icon-color);
   min-width: 1vw;
-  margin-left: 10px;
+  margin: 20px 20px auto 20px;
 }
 
 .menubtn {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: 10%;
   width: 150px;
   height: 10px;
   padding: 20px;
@@ -235,7 +247,6 @@ ion-icon {
 
 ion-icon:hover {
   color: var(--text-color);
-  font-size: 70px;
   transform: scale(1.5);
 }
 
@@ -272,7 +283,8 @@ ion-icon:hover {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 100px;
+  margin: auto;
+  overflow: hidden;
 }
 
 .dark .behancecard {
@@ -315,7 +327,7 @@ ion-icon:hover {
 }
 
 #curso {
-  font-size: 32px;
+  font-size: 25px;
   font-family: Poppins;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -364,38 +376,6 @@ footer {
 }
 
 @media (max-width: 600px) {
-  #switch {
-    top: 50px;
-    right: 0;
-    margin: 5% auto;
-  }
-
-  #switch button {
-    overflow: hidden;
-    background: var(--switch-img);
-    width: 40px;
-    height: 40px;
-    border: 0;
-    border-radius: 50%;
-    position: absolute;
-    z-index: 1;
-    transform: translateY(-50%);
-    animation: slideoff 0.5s forwards;
-  }
-
-  #switch span {
-    position: absolute;
-    z-index: 0;
-    margin: 0 auto;
-    width: 100px;
-    height: 10px;
-    background: var(--text-color);
-    border: var(--icon-color);
-    border-radius: 999px;
-    transform: translateY(-50%);
-    top: 50%;
-  }
-
   .links {
     display: flex;
     flex-flow: wrap row;
@@ -474,18 +454,18 @@ footer {
 
 @keyframes slide {
   from {
-    left: 0;
+    transform: rotate(0);
   }
   to {
-    left: 50%;
+    transform: rotate(360deg);
   }
 }
 
 @keyframes slideoff {
   from {
-    left: 50%;
+    transform: rotate(0);
   }
   to {
-    left: 0;
+    transform: rotate(-360deg);
   }
 }

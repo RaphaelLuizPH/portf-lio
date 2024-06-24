@@ -36,12 +36,25 @@
     />
     <title>Linktree</title>
   </head>
-  <body onload="startTime()">
-    <div id="switch" onclick="mudarTema()">
-      <button></button>
-      <span></span>
-    </div>
-
+  <body>
+    <nav id="navbar">
+      <div id="switch" onclick="mudarTema()">
+        <button></button>
+      </div>
+      <div id="menucont">
+        <div class="menu">
+          <span class="listicon">
+            <i class="fa-solid fa-bars fa-2x" class="menubtn"></i>
+          </span>
+          <div class="menucontent">
+            <p class="sobremim">Sobre mim</p>
+            <p>Design Gráfico</p>
+            <p>Front-end</p>
+            <p>Back-end</p>
+          </div>
+        </div>
+      </div>
+    </nav>
     <div id="namebox">
       <img
         id="PH"
@@ -50,20 +63,10 @@
       />
 
       <h1 id="name">RAPHAEL LUIZ</h1>
-      <p id="curso">Engenharia de Software</p>
-    </div>
-    <div id="menucont">
-      <div class="menu">
-        <span class="listicon">
-          <i class="fa-solid fa-bars fa-2x" class="menubtn"></i>
-        </span>
-        <div class="menucontent">
-          <p>Sobre mim</p>
-          <p>Design Gráfico</p>
-          <p>Front-end</p>
-          <p>Back-end</p>
-        </div>
-      </div>
+      <p id="curso">
+        Estudante de Engenharia de Software na Universidade Católica de
+        Brasília. Designer Gráfico.
+      </p>
     </div>
 
     <div id="logo">
@@ -115,8 +118,7 @@
     <section id="aboutme">
       <h1>Sobre mim</h1>
       <p>
-        Estudante de Engenharia de Software na Universidade Católica de
-        Brasília. Busco adquirir experiência na área de TI.
+        Busco adquirir experiência na área de TI.
         <br />
         Experiência: <br />
         Auxiliar administrativo (2018-2020) na Câmara dos Deputados <br />
