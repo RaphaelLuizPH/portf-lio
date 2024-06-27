@@ -94,12 +94,6 @@
             </a>
           </form>
           <form>
-            <a href="https://www.youtube.com/@PHLuiz" target="_blank">
-              <ion-icon name="logo-youtube" id="logo-youtube"></ion-icon>
-              <h1 class="legenda">Youtube</h1>
-            </a>
-          </form>
-          <form>
             <a href="https://www.instagram.com/phluiz.psd/" target="_blank">
               <ion-icon name="logo-instagram" id="logo-instagram"> </ion-icon>
               <h1 class="legenda">Insta</h1>
@@ -116,25 +110,53 @@
     </div>
 
     <section id="aboutme">
-      <h1>Sobre mim</h1>
-      <p>
-        Busco adquirir experiência na área de TI.
-        <br />
-        Experiência: <br />
-        Auxiliar administrativo (2018-2020) na Câmara dos Deputados <br />
-        Designer gráfico (2023 - Atualmente) como freelancer/PJ,
-        <br />
-        Habilidade em hardware e software, informática, computação.
-        <br />
-        Pacotes: Pacote Adobe, Pacote Office.
-        <br />
-        Ferramentas: HTML, CSS, Python, JavaScript.
-        <br />
-        Idiomas: Português, Inglês.
-        <br />
-        Trabalhos voluntários: <br />Desenvolvedor Front-end para Cajuí Collab
-        <br />Diretor de Marketing para Centro Acadêmico de Cursos de TI
-      </p>
+      <div id="menu">
+        <h1>Sobre mim</h1>
+        <ul>
+          <button id="quemsoubutton">Quem sou</button>
+          <button id="obj">Objetivos</button>
+        </ul>
+        <ul>
+          <button id="xp">Experiência</button>
+          <button id="skills">Skills</button>
+        </ul>
+      </div>
+      <div class="content" id="quemsou">
+        <p>
+          Olá! Me chamo Raphael!
+          <span id="idade">21</span>estudo Engenharia de Software pela
+          Universidade Católica de Brasília, minhas paixões profissionais são a
+          tecnologia e o design.
+        </p>
+        <p>
+          Em 2022 iniciei carreira como designer gráfico, inicialmente como
+          freelancer, em 2023 fui contrado por uma agência de marketing onde
+          trabalhei durante um ano.
+        </p>
+
+        <p>
+          Decidi iniciar meus estudos sobre programação ainda em 2022 e iniciei
+          meu ensino superior na área em março de 2024.
+        </p>
+        <p>
+          No primeiro semestre me canditei e consegui passar no processo
+          seletivo para o CACTI e a EJ
+          <span id="cajuicollab">Cajuí Collab</span>. Agora, procuro obter
+          experiência na área de TI enquanto estudo.
+        </p>
+      </div>
+
+      <div class="content" id="Objetivos">
+        <p>Objetivos</p>
+      </div>
+
+      <div class="content" id="Experiência">
+        <p>Experiência</p>
+      </div>
+
+      <div class="content" id="Skills">
+        <p>Skills</p>
+      </div>
     </section>
 
     <section class="section">
@@ -231,11 +253,30 @@
       </div>
     </section>
 
+    <section class="section">
+      <h1 class="typeof">Desenvolvimento Front-end</h1>
+      <div class="sitecontainer">
+        <img
+          data-aos="fade-up"
+          id="cajuidesktop"
+          src="/assets/CajuiDesktop.png"
+          alt=""
+        />
+        <img
+          data-aos="fade-up"
+          id="cajuimobile"
+          src="/assets/CajuiMobile.png"
+          alt=""
+        />
+      </div>
+    </section>
+
     <footer>
       Site criado no primeiro semestre do curso Engenharia de Software <br />
       na Universidade Católica de Brasília. 2024.
     </footer>
 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
     <script
