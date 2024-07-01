@@ -319,8 +319,71 @@ ion-icon:hover {
   flex-flow: column nowrap;
   align-items: flex-start;
   justify-content: left;
-  max-width: 70%;
+  max-width: 90%;
 }
+
+.content h2 {
+  color: var(--icon-color);
+}
+
+.goals {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.goals i {
+  justify-self: center;
+  align-self: center;
+  margin: auto 5px;
+  color: var(--icon-color);
+  border: solid var(--text-color) 1px;
+  border-radius: 999px;
+}
+
+.skillcontainer {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin: 1% auto;
+  position: relative;
+}
+
+.skillline1 {
+  margin-top: 10px;
+  height: 2px;
+  width: 70%;
+  background-color: var(--text-color);
+}
+
+.skillline2 {
+  margin-top: 10px;
+  height: 2px;
+  width: 50%;
+  background-color: var(--text-color);
+}
+
+.skillline3 {
+  margin-top: 10px;
+  height: 2px;
+  width: 70%;
+  background-color: var(--text-color);
+}
+
+.skillline4 {
+  margin-top: 10px;
+  height: 2px;
+  width: 25%;
+  background-color: var(--text-color);
+}
+
+
+
+
 
 #portifoliobehance {
   gap: 5px;
@@ -365,11 +428,10 @@ ion-icon:hover {
   font-family: Poppins;
   font-optical-sizing: auto;
   font-weight: 500;
+  display: inline;
   font-style: normal;
+  color: var(--text-color);
   font-variation-settings: "BLED" 0, "SCAN" 0;
-  background: var(--name-gradient);
-  background-clip: text;
-  color: transparent;
 }
 
 #curso {
@@ -447,8 +509,6 @@ footer {
   padding: 24px;
 }
 
-
-
 @media (max-width: 600px) {
   .links {
     display: flex;
@@ -520,7 +580,6 @@ footer {
   #cajuidesktop {
     display: none;
   }
-  
 }
 
 @keyframes blurry {

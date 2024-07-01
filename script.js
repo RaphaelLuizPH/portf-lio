@@ -10,6 +10,7 @@ const xp = document.querySelector("#xp");
 const skills = document.querySelector("#skills");
 const aboutmebutton = document.querySelector(".sobremim");
 quemsou.style.display = "flex";
+quem.style.border = "var(--icon-color) solid 1px";
 Objetivos.style.display = "none";
 Experiência.style.display = "none";
 Skills.style.display = "none";
@@ -31,8 +32,15 @@ function quemsoutxt() {
   if (quemsou.style.display === "none") {
     quemsou.style.display = "flex";
     quem.style.border = "var(--icon-color) solid 1px";
+    obj.style.border = "none";
+    xp.style.border = "none";
+    skills.style.border = "none";
   } else {
     quemsou.style.display = "none";
+    quem.style.border = "none";
+    obj.style.border = "none";
+    xp.style.border = "none";
+    skills.style.border = "none";
   }
   Objetivos.style.display = "none";
   Experiência.style.display = "none";
@@ -43,8 +51,15 @@ function objtvs() {
   if (Objetivos.style.display === "none") {
     Objetivos.style.display = "flex";
     obj.style.border = "var(--icon-color) solid 1px";
+    xp.style.border = "none";
+    skills.style.border = "none";
+    quem.style.border = "none";
   } else {
     Objetivos.style.display = "none";
+    quem.style.border = "none";
+    obj.style.border = "none";
+    xp.style.border = "none";
+    skills.style.border = "none";
   }
   quemsou.style.display = "none";
   Experiência.style.display = "none";
@@ -55,8 +70,15 @@ function exp() {
   if (Experiência.style.display === "none") {
     Experiência.style.display = "flex";
     xp.style.border = "var(--icon-color) solid 1px";
+    quem.style.border = "none";
+    obj.style.border = "none";
+    skills.style.border = "none";
   } else {
     Experiência.style.display = "none";
+    quem.style.border = "none";
+    obj.style.border = "none";
+    xp.style.border = "none";
+    skills.style.border = "none";
   }
   quemsou.style.display = "none";
   Objetivos.style.display = "none";
@@ -67,8 +89,15 @@ function skill() {
   if (Skills.style.display === "none") {
     Skills.style.display = "flex";
     skills.style.border = "var(--icon-color) solid 1px";
+    quem.style.border = "none";
+    obj.style.border = "none";
+    xp.style.border = "none";
   } else {
     Skills.style.display = "none";
+    quem.style.border = "none";
+    obj.style.border = "none";
+    xp.style.border = "none";
+    skills.style.border = "none";
   }
   quemsou.style.display = "none";
   Experiência.style.display = "none";
