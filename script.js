@@ -1,4 +1,4 @@
-AOS.init({ duration: 400, delay: 400 });
+AOS.init({ duration: 800, delay: 400 });
 
 const quemsou = document.querySelector("#quemsou");
 const Objetivos = document.querySelector("#Objetivos");
@@ -115,6 +115,9 @@ function aboutme() {
   var aboutme = window.document.querySelector("#aboutme");
   aboutme.scrollIntoView({ block: "start", behavior: "smooth" });
 }
+
+
+
 
 const imageContainer = document.querySelector(".sitecontainer");
 const image = document.querySelector(".sitecontainer img");

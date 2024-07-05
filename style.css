@@ -382,7 +382,15 @@ ion-icon:hover {
 }
 
 
+#xpcont {
+  margin-top: 50px;
+  width: 100%;
+  height: fit-content;
+  border: solid var(--icon-color) 1px;
+  padding: 10px;
+  border-radius: 9px;
 
+}
 
 
 #portifoliobehance {
@@ -509,6 +517,43 @@ footer {
   padding: 24px;
 }
 
+
+
+@keyframes blurry {
+  0% {
+    font-size: 64px;
+    filter: blur(10px);
+  }
+  20% {
+    font-size: 70px;
+  }
+  90% {
+    color: var(--text-color);
+  }
+  100% {
+    color: var(--text-color);
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slideoff {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+
 @media (max-width: 600px) {
   .links {
     display: flex;
@@ -579,39 +624,5 @@ footer {
 
   #cajuidesktop {
     display: none;
-  }
-}
-
-@keyframes blurry {
-  0% {
-    font-size: 64px;
-    filter: blur(10px);
-  }
-  20% {
-    font-size: 70px;
-  }
-  90% {
-    color: var(--text-color);
-  }
-  100% {
-    color: var(--text-color);
-  }
-}
-
-@keyframes slide {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes slideoff {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(-360deg);
   }
 }
