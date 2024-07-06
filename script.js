@@ -1,14 +1,14 @@
-AOS.init({ duration: 800, delay: 400 });
+AOS.init({ duration: 200, delay: 400 });
 
-const quemsou = document.querySelector("#quemsou");
-const Objetivos = document.querySelector("#Objetivos");
-const Experiência = document.querySelector("#Experiência");
-const Skills = document.querySelector("#Skills");
-const quem = document.querySelector("#quemsoubutton");
-const obj = document.querySelector("#obj");
-const xp = document.querySelector("#xp");
-const skills = document.querySelector("#skills");
-const aboutmebutton = document.querySelector(".sobremim");
+let quemsou = document.querySelector("#quemsou");
+let Objetivos = document.querySelector("#Objetivos");
+let Experiência = document.querySelector("#Experiência");
+let Skills = document.querySelector("#Skills");
+let quem = document.querySelector("#quemsoubutton");
+let obj = document.querySelector("#obj");
+let xp = document.querySelector("#xp");
+let skills = document.querySelector("#skills");
+let aboutmebutton = document.querySelector(".sobremim");
 quemsou.style.display = "flex";
 quem.style.border = "var(--icon-color) solid 1px";
 Objetivos.style.display = "none";
@@ -21,6 +21,21 @@ function mudarTema() {
   html.classList.toggle("dark");
 }
 
+const aboutmelist = [quemsou, Objetivos, Experiência, Skills];
+const aboutmebuttonlist = [quem, obj, xp, skills];
+
+function txtselct(n) {
+  for (let i = 0; i < aboutmelist.length; i++) {
+    if (i !== n) {
+      aboutmebuttonlist[i].style.border = "none";
+      aboutmelist[i].style.display = "none";
+    } else {
+      aboutmebuttonlist[i].style.border = "var(--icon-color) solid 1px";
+      aboutmelist[i].style.display = "flex"; 
+    }
+  }
+}
+
 // Calcula idade
 
 var ano = new Date().getFullYear();
@@ -28,96 +43,14 @@ idade = document.querySelector("#idade");
 idade.innerText = ` ${ano - 2002}   ` + `anos de idade, `;
 
 // Esconde ou mostra o texto
-function quemsoutxt() {
-  if (quemsou.style.display === "none") {
-    quemsou.style.display = "flex";
-    quem.style.border = "var(--icon-color) solid 1px";
-    obj.style.border = "none";
-    xp.style.border = "none";
-    skills.style.border = "none";
-  } else {
-    quemsou.style.display = "none";
-    quem.style.border = "none";
-    obj.style.border = "none";
-    xp.style.border = "none";
-    skills.style.border = "none";
-  }
-  Objetivos.style.display = "none";
-  Experiência.style.display = "none";
-  Skills.style.display = "none";
-}
-
-function objtvs() {
-  if (Objetivos.style.display === "none") {
-    Objetivos.style.display = "flex";
-    obj.style.border = "var(--icon-color) solid 1px";
-    xp.style.border = "none";
-    skills.style.border = "none";
-    quem.style.border = "none";
-  } else {
-    Objetivos.style.display = "none";
-    quem.style.border = "none";
-    obj.style.border = "none";
-    xp.style.border = "none";
-    skills.style.border = "none";
-  }
-  quemsou.style.display = "none";
-  Experiência.style.display = "none";
-  Skills.style.display = "none";
-}
-
-function exp() {
-  if (Experiência.style.display === "none") {
-    Experiência.style.display = "flex";
-    xp.style.border = "var(--icon-color) solid 1px";
-    quem.style.border = "none";
-    obj.style.border = "none";
-    skills.style.border = "none";
-  } else {
-    Experiência.style.display = "none";
-    quem.style.border = "none";
-    obj.style.border = "none";
-    xp.style.border = "none";
-    skills.style.border = "none";
-  }
-  quemsou.style.display = "none";
-  Objetivos.style.display = "none";
-  Skills.style.display = "none";
-}
-
-function skill() {
-  if (Skills.style.display === "none") {
-    Skills.style.display = "flex";
-    skills.style.border = "var(--icon-color) solid 1px";
-    quem.style.border = "none";
-    obj.style.border = "none";
-    xp.style.border = "none";
-  } else {
-    Skills.style.display = "none";
-    quem.style.border = "none";
-    obj.style.border = "none";
-    xp.style.border = "none";
-    skills.style.border = "none";
-  }
-  quemsou.style.display = "none";
-  Experiência.style.display = "none";
-  Objetivos.style.display = "none";
-}
 
 aboutmebutton.addEventListener("click", aboutme);
-quem.addEventListener("click", quemsoutxt);
-obj.addEventListener("click", objtvs);
-xp.addEventListener("click", exp);
-skills.addEventListener("click", skill);
 
 // Move a tela
 function aboutme() {
   var aboutme = window.document.querySelector("#aboutme");
   aboutme.scrollIntoView({ block: "start", behavior: "smooth" });
 }
-
-
-
 
 const imageContainer = document.querySelector(".sitecontainer");
 const image = document.querySelector(".sitecontainer img");

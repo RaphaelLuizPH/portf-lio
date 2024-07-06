@@ -16,9 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Workbench&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="stylemobile.css">  
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -115,12 +113,12 @@
       <div id="menu">
         <h1>Sobre mim</h1>
         <ul>
-          <button id="quemsoubutton">Quem sou</button>
-          <button id="obj">Objetivos</button>
+          <button id="quemsoubutton" onclick="txtselct(0)">Quem sou</button>
+          <button id="obj" onclick="txtselct(1)">Objetivos</button>
         </ul>
         <ul>
-          <button id="xp">Experiência</button>
-          <button id="skills">Skills</button>
+          <button id="xp" onclick="txtselct(2)">Experiência</button>
+          <button id="skills"onclick="txtselct(3)">Skills</button>
         </ul>
       </div>
       <div class="content" id="quemsou">
