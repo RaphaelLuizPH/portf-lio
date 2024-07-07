@@ -381,7 +381,6 @@ ion-icon:hover {
   background-color: var(--text-color);
 }
 
-
 #xpcont {
   margin-top: 50px;
   width: 100%;
@@ -389,9 +388,7 @@ ion-icon:hover {
   border: solid var(--icon-color) 1px;
   padding: 10px;
   border-radius: 9px;
-
 }
-
 
 #portifoliobehance {
   gap: 5px;
@@ -517,8 +514,6 @@ footer {
   padding: 24px;
 }
 
-
-
 @keyframes blurry {
   0% {
     font-size: 64px;
@@ -552,7 +547,6 @@ footer {
     transform: rotate(-360deg);
   }
 }
-
 
 @media (max-width: 600px) {
   .links {

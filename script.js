@@ -1,4 +1,4 @@
-AOS.init({ duration: 200, delay: 400 });
+AOS.init({ duration: 1000, delay: 400 });
 
 let quemsou = document.querySelector("#quemsou");
 let Objetivos = document.querySelector("#Objetivos");
