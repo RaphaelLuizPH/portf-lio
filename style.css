@@ -339,7 +339,6 @@ ion-icon:hover {
   align-self: center;
   margin: auto 5px;
   color: var(--icon-color);
-  border: solid var(--text-color) 1px;
   border-radius: 999px;
 }
 
@@ -455,6 +454,10 @@ ion-icon:hover {
 .typeof {
   color: var(--text-color);
   margin: 10% auto;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--blur-color);
 }
 
 .sitecontainer {
@@ -483,16 +486,24 @@ ion-icon:hover {
   display: block;
 }
 
+.projectName {
+  color: var(--text-color);
+  margin: 10px  auto;
+  text-align: left;
+}
+
+.projectName:hover {
+  text-decoration: underline;
+}
+
 form {
   display: block;
   margin: auto;
 }
 
 footer {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  margin-top: 50%;
+  background-color: var(--blur-color);
   font-family: Poppins;
   font-optical-sizing: auto;
   font-weight: 500;
