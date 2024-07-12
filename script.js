@@ -21,6 +21,15 @@ function mudarTema() {
   html.classList.toggle("dark");
 }
 
+
+
+
+let sections = document.querySelectorAll(".section");
+function hideshow(n) {
+  sections[n].style.display = 'flex';
+  
+}
+
 const aboutmelist = [quemsou, Objetivos, Experiência, Skills];
 const aboutmebuttonlist = [quem, obj, xp, skills];
 
@@ -31,7 +40,7 @@ function txtselct(n) {
       aboutmelist[i].style.display = "none";
     } else {
       aboutmebuttonlist[i].style.border = "var(--icon-color) solid 1px";
-      aboutmelist[i].style.display = "flex"; 
+      aboutmelist[i].style.display = "flex";
     }
   }
 }

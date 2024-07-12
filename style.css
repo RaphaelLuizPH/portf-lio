@@ -46,6 +46,8 @@ section {
 }
 
 .section {
+  height: fit-content;
+  width: 100vw;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -452,6 +454,7 @@ ion-icon:hover {
 }
 
 .typeof {
+  font-size: xx-large;
   color: var(--text-color);
   margin: 10% auto;
   width: 100%;
@@ -488,12 +491,20 @@ ion-icon:hover {
 
 .projectName {
   color: var(--text-color);
-  margin: 10px  auto;
-  text-align: left;
+
+  margin: 10px auto;
+  text-align: center;
 }
 
 .projectName:hover {
   text-decoration: underline;
+}
+
+.section h2 {
+  text-align: left;
+  width: 80%;
+  color: var(--text-color);
+  margin: 1% auto;
 }
 
 form {
