@@ -35,6 +35,7 @@ body {
   font-family: Poppins;
   font-optical-sizing: auto;
   font-weight: 500;
+  
 }
 
 a {
@@ -218,7 +219,7 @@ form:hover .legenda {
 
 .legenda {
   color: var(--text-color);
-  margin: 5% auto;
+  margin: 20% auto;
   font-size: 16px;
   text-align: center;
   font-family: poppins;
@@ -460,7 +461,7 @@ ion-icon:hover {
   width: 100%;
   padding: 10px;
   text-align: center;
-  background-color: var(--blur-color);
+ 
 }
 
 .sitecontainer {
@@ -491,9 +492,9 @@ ion-icon:hover {
 
 .projectName {
   color: var(--text-color);
-
-  margin: 10px auto;
-  text-align: center;
+  align-self: flex-end;
+  margin-right: 10%;
+  text-align: right;
 }
 
 .projectName:hover {
@@ -502,9 +503,19 @@ ion-icon:hover {
 
 .section h2 {
   text-align: left;
-  width: 80%;
+  font-size: 15px;
   color: var(--text-color);
-  margin: 1% auto;
+  margin-left: 10%;
+}
+
+.frontendCont {
+  width: 100%;
+  margin: auto;
+  height: fit-content;
+  display: flex;
+  flex-flow: column;
+  justify-items: left;
+  align-items: start;
 }
 
 form {
@@ -571,6 +582,9 @@ footer {
 }
 
 @media (max-width: 600px) {
+
+
+
   .links {
     display: flex;
     flex-flow: wrap row;
@@ -585,8 +599,7 @@ footer {
 
   .legenda {
     display: flex;
-    align-items: last baseline;
-    justify-content: flex-end;
+
     color: var(--text-color);
     font-size: 16px;
     text-align: center;
@@ -594,6 +607,7 @@ footer {
     display: none;
     transition: all ease-in-out 0.5s;
   }
+
   ion-icon {
     border-radius: 9px;
     color: var(--icon-color);
