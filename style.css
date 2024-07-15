@@ -35,7 +35,6 @@ body {
   font-family: Poppins;
   font-optical-sizing: auto;
   font-weight: 500;
-  
 }
 
 a {
@@ -213,7 +212,7 @@ section {
   max-height: 100px;
 }
 
-form:hover .legenda {
+article:hover .legenda {
   visibility: visible;
 }
 
@@ -393,14 +392,17 @@ ion-icon:hover {
 }
 
 #portifoliobehance {
-  gap: 5px;
+  padding: 1%;
+  width: 99%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   margin: auto;
-  overflow: hidden;
+  gap: 20px;
+  padding: 20px;
+  
 }
 
 .dark .behancecard {
@@ -415,10 +417,27 @@ ion-icon:hover {
 .behancecard {
   filter: none;
   transition: all 0.5s;
+  height: 800px;
+  width: 550px;
+  transition: all 1s;
+}
+
+.behancecard img {
+  text-align: center;
+  justify-self: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#cut {
+  
+  width: 1120px;
 }
 
 .behancecard:hover {
   filter: grayscale();
+  transform: translate(1.3);
 }
 
 #namebox {
@@ -461,7 +480,6 @@ ion-icon:hover {
   width: 100%;
   padding: 10px;
   text-align: center;
- 
 }
 
 .sitecontainer {
@@ -490,11 +508,24 @@ ion-icon:hover {
   display: block;
 }
 
-.projectName {
+.projectlinkContainer {
+  width: 80%;
+  margin: 5px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+}
+
+.projectGithub {
+  width: fit-content;
   color: var(--text-color);
-  align-self: flex-end;
-  margin-right: 10%;
   text-align: right;
+}
+
+.projectLink {
+  width: fit-content;
+  color: var(--text-color);
+  text-align: left;
 }
 
 .projectName:hover {
@@ -582,9 +613,6 @@ footer {
 }
 
 @media (max-width: 600px) {
-
-
-
   .links {
     display: flex;
     flex-flow: wrap row;
@@ -654,5 +682,21 @@ footer {
 
   #cajuidesktop {
     display: none;
+  }
+
+  .behancecard {
+    filter: none;
+    transition: all 0.5s;
+    height: 600px;
+    width: 600px;
+    transition: all 1s;
+  }
+
+  .behancecard img {
+    text-align: center;
+    justify-self: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
