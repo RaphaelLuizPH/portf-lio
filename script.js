@@ -24,11 +24,6 @@ function mudarTema() {
 
 
 
-let sections = document.querySelectorAll(".section");
-function hideshow(n) {
-  sections[n].style.display = 'flex';
-  
-}
 
 const aboutmelist = [quemsou, Objetivos, Experiência, Skills];
 const aboutmebuttonlist = [quem, obj, xp, skills];
