@@ -16,14 +16,20 @@ Experiência.style.display = "none";
 Skills.style.display = "none";
 
 // Muda o tema
-function mudarTema() {
+
+
+
+
+
+const mudarTema = () => {
   const html = document.documentElement;
   html.classList.toggle("dark");
 }
 
+mudarTema()
 
-
-
+let switchTheme = document.querySelector("#switch");
+switchTheme.addEventListener('click', mudarTema())
 
 const aboutmelist = [quemsou, Objetivos, Experiência, Skills];
 const aboutmebuttonlist = [quem, obj, xp, skills];

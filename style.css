@@ -402,7 +402,6 @@ ion-icon:hover {
   margin: auto;
   gap: 20px;
   padding: 20px;
-  
 }
 
 .dark .behancecard {
@@ -431,7 +430,6 @@ ion-icon:hover {
 }
 
 #cut {
-  
   width: 1120px;
 }
 
@@ -501,7 +499,7 @@ ion-icon:hover {
 }
 
 #cajuimobile {
-  user-drag: none; 
+  user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
@@ -511,7 +509,7 @@ ion-icon:hover {
 }
 
 #cajuidesktop {
-  user-drag: none; 
+  user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
@@ -699,9 +697,8 @@ footer {
 
   .behancecard {
     filter: none;
-    transition: all 0.5s;
-    height: 600px;
-    width: 600px;
+    width: auto;
+    height: auto;
     transition: all 1s;
   }
 
@@ -711,5 +708,9 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  #portifoliobehance {
+    padding: 2%;
   }
 }
