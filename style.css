@@ -35,6 +35,7 @@ body {
   font-family: Poppins;
   font-optical-sizing: auto;
   font-weight: 500;
+  /* outline: #ececec solid;*/
 }
 
 a {
@@ -48,6 +49,7 @@ section {
 .section {
   height: fit-content;
   width: 100vw;
+  padding: 20px;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -392,8 +394,7 @@ ion-icon:hover {
 }
 
 #portifoliobehance {
-  padding: 1%;
-  width: 99%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -401,7 +402,7 @@ ion-icon:hover {
   justify-content: center;
   margin: auto;
   gap: 20px;
-  padding: 20px;
+  padding: 0;
 }
 
 .dark .behancecard {
@@ -421,12 +422,48 @@ ion-icon:hover {
   transition: all 1s;
 }
 
+.behancecardSquare {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-end;
+  filter: none;
+  transition: all 0.5s;
+  height: fit-content;
+  width: 800px;
+  max-width: fit-content;
+  transition: all 1s;
+}
+
+.behancecardSquareContainer img {
+  text-align: right;
+  justify-self: right;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale();
+  transition: all 0.5s;
+}
+
+.behancecardSquareContainer {
+  align-self: center;
+  justify-self: stretch;
+  height: 400px;
+  width: 400px;
+}
+
 .behancecard img {
   text-align: center;
   justify-self: center;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+
+
+.dark .behancecardSquareContainer img:hover {
+  filter: none;
 }
 
 #cut {
@@ -712,5 +749,20 @@ footer {
 
   #portifoliobehance {
     padding: 2%;
+  }
+
+  .behancecardSquare {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    filter: none;
+    transition: all 0.5s;
+    height: fit-content;
+    width: fit-content;
+    transition: all 1s;
+  }
+
+  .dark .behancecardSquareContainer img {
+    filter: none;
   }
 }
