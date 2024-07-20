@@ -42,13 +42,10 @@ a {
   text-decoration: none;
 }
 
-section {
-  max-width: 100%;
-}
+
 
 .section {
   height: fit-content;
-  width: 100vw;
   padding: 20px;
   display: flex;
   flex-flow: column;
@@ -328,6 +325,7 @@ ion-icon:hover {
 
 .content h2 {
   color: var(--icon-color);
+
 }
 
 .goals {
@@ -401,7 +399,7 @@ ion-icon:hover {
   align-items: center;
   justify-content: center;
   margin: auto;
-  gap: 20px;
+  gap: 10px;
   padding: 0;
 }
 
@@ -467,7 +465,7 @@ ion-icon:hover {
 }
 
 #cut {
-  width: 1120px;
+  flex: 1 0 800px;
 }
 
 .behancecard:hover {
@@ -585,6 +583,7 @@ ion-icon:hover {
   color: var(--text-color);
   margin-left: 10%;
   padding-bottom: 10px;
+  width: 80%;
 }
 
 .frontendCont {
@@ -762,7 +761,18 @@ footer {
     transition: all 1s;
   }
 
+  .behancecardSquareContainer {
+    align-self: center;
+    justify-self: center;
+    height: 300px;
+    width: 300px;
+  }
+
   .dark .behancecardSquareContainer img {
     filter: none;
+  }
+
+  #cut {
+    flex: 0 1 auto;
   }
 }
