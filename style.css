@@ -21,6 +21,12 @@
   --tema-side: 1;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+}
+
+
 body {
   background: var(--background);
   background-repeat: repeat;
@@ -173,11 +179,17 @@ a {
   text-align: left;
 }
 
-.menucontent p:hover {
+.menucontent a:hover {
   background-color: #8f8f8f;
   color: #ececec;
   cursor: pointer;
 }
+
+.menucontent a{
+ display: block;
+ color: black;
+}
+
 
 .menu:hover .menucontent {
   display: block;
@@ -432,7 +444,7 @@ ion-icon:hover {
   filter: none;
   transition: all 0.5s;
   height: fit-content;
-  width: 800px;
+  max-width: 100%;
   transition: all 1s;
 
 }

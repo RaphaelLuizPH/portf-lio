@@ -54,13 +54,7 @@ idade.innerText = ` ${ano - 2002}   ` + `anos de idade, `;
 
 // Esconde ou mostra o texto
 
-aboutmebutton.addEventListener("click", aboutme);
 
-// Move a tela
-function aboutme() {
-  var aboutme = window.document.querySelector("#aboutme");
-  aboutme.scrollIntoView({ block: "start", behavior: "smooth" });
-}
 
 const imageContainer = document.querySelector(".sitecontainer");
 const image = document.querySelector(".sitecontainer img");
