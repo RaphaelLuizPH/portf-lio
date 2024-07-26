@@ -392,7 +392,8 @@ ion-icon:hover {
 }
 
 #portifoliobehance {
-  width: fit-content;
+  width: 100%;
+  height: fit-content;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -425,7 +426,7 @@ ion-icon:hover {
 .behancecardSquare {
   display: flex;
   flex-flow: row wrap;
-  justify-content: left;
+  justify-content: center;
   justify-self: left;
   align-items: start;
   filter: none;
@@ -433,6 +434,7 @@ ion-icon:hover {
   height: fit-content;
   width: 800px;
   transition: all 1s;
+
 }
 
 .behancecardSquareContainer img {
@@ -444,6 +446,8 @@ ion-icon:hover {
   object-fit: cover;
   filter: grayscale();
   transition: all 0.5s;
+
+
 }
 
 .behancecardSquareContainer {
@@ -453,7 +457,7 @@ ion-icon:hover {
 }
 
 #cut  {
-  flex: 1 1 700px;
+  flex: 1 1 70%;
 
 }
 
