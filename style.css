@@ -406,6 +406,7 @@ ion-icon:hover {
 
 #portifoliobehance {
   width: 100%;
+  max-width: 2000px;
   height: fit-content;
   display: flex;
   flex-direction: row;
@@ -445,7 +446,8 @@ ion-icon:hover {
   filter: none;
   transition: all 0.5s;
   height: fit-content;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1900px;
   transition: all 1s;
 
 }
